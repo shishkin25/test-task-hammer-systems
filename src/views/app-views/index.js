@@ -19,6 +19,10 @@ export const AppViews = () => {
           path={`${APP_PREFIX_PATH}/edit-profile/:id`}
           component={lazy(() => import(`./EditProfile.js`))}
         />
+        <Route
+          path={`${APP_PREFIX_PATH}/planner`}
+          component={lazy(() => import(`./planner`))}
+        />
         <Redirect from={`${APP_PREFIX_PATH}`} to={`${APP_PREFIX_PATH}/home`} />
       </Switch>
     </Suspense>
