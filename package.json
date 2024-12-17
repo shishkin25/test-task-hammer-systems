@@ -1,6 +1,5 @@
 {
   "name": "emilus",
-  "homepage": "https://shishkin25.github.io/test-task-hammer-systems",
   "version": "2.0.1",
   "private": true,
   "dependencies": {
