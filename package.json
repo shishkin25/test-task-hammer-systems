@@ -1,5 +1,6 @@
 {
   "name": "emilus",
+  "homepage": "https://shishkin25.github.io/test-task-hammer-systems",
   "version": "2.0.1",
   "private": true,
   "dependencies": {
@@ -61,6 +62,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "concurrently \"npm run start\" \"gulp watch\""
@@ -85,6 +88,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.4",
+    "gh-pages": "^6.2.0",
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-debug": "^4.0.0",
